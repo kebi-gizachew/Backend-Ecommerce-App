@@ -6,5 +6,4 @@ const prod=new mongoose.Schema({
         quantity:{type:Number,required:true,default:1}
     }]
 })
-export const Cart=mongoose.model("Cart",prod    
-)
+export const Cart=mongoose.model("Cart",prod)
