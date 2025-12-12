@@ -1,4 +1,4 @@
-import {Product} from './models/Product.js';
+import {Product} from '../models/Product.js';
 export const allPro=async(req,res)=>{
     try{
         const products=await Product.find({})

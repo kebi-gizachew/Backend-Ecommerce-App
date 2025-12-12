@@ -1,6 +1,6 @@
-import {removeCart,createCart,getCart} from "../controllers/cartController.js";
+import {removeCart,createCart,getCart} from "../controller/cartController.js";
 import express from "express";
-export const router=express.Router()
-router.route("/:id").get(getCart)
-router.route("/add").post(createCart)
-router.route("/remove/:id").post(removeCart) 
+export const cartRoutes=express.Router()
+cartRoutes.route("/:id").get(getCart)
+cartRoutes.route("/add").post(createCart)
+cartRoutes.route("/remove/:id").post(removeCart) 
